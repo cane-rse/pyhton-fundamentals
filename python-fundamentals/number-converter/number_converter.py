@@ -22,10 +22,10 @@ def number_converter():
             elif input_base == "hex":
                 num = int(number, 16)
             else:
-                print("❌ Invalid input base. Try again.")
+                print(" Invalid input base. Try again.")
                 continue
         except ValueError:
-            print("⚠️ Invalid number for the specified input base. Try again.")
+            print(" Invalid number for the specified input base. Try again.")
             continue
 
         # Convert decimal number to desired output base
@@ -38,10 +38,10 @@ def number_converter():
         elif output_base == "hex":
             result = hex(num)[2:].upper()
         else:
-            print("❌ Invalid output base. Try again.")
+            print(" Invalid output base. Try again.")
             continue
 
-        print(f"\n✅ Conversion Result: {number} ({input_base}) → {result} ({output_base})")
+        print(f"\n Conversion Result: {number} ({input_base}) → {result} ({output_base})")
 
 if __name__ == "__main__":
     number_converter()
